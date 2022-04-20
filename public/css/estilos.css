@@ -1,116 +1,109 @@
-
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 :root {
-    --Amarillo: #EAC926;
-    --Azul: #03264C;
-    --Celeste: #1259c3;
-    --GrisOscuro: #666;
-    --GrisClaro: #ebebeb;
-    --Verde: #39b54a;
+  --Amarillo: #eac926;
+  --Azul: #03264c;
+  --Celeste: #1259c3;
+  --GrisOscuro: #666;
+  --GrisClaro: #ebebeb;
+  --Verde: #39b54a;
 }
 
 body {
-    background-color: var(--GrisClaro);
-    font-family: 'Roboto';
-    margin: 0px;
-    width: 100%;
-
-
+  background-color: var(--GrisClaro);
+  font-family: "Roboto";
+  margin: 0px;
 }
-header{
-    background-color: var(--Amarillo);
-   
-   
+header {
+  background-color: var(--Amarillo);
 }
 
-.nav{
-    display: inline-block;
+.nav {
+  display: inline-block;
 }
 
-.logo{
-    width: 40vh;
+.logo {
+  width: 200px;
 }
 
-.banner{
-    width: 100%;
-    
+.banner {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
-.precio{
- font-size: 18px;
- border-top: solid 1px #ebebeb;
-
+.precio {
+  font-size: 18px;
+  border-top: solid 1px #ebebeb;
 }
-.descuentos{
-    font-size: 16px;
-    color: var(--Verde);
+.descuentos {
+  font-size: 16px;
+  color: var(--Verde);
 }
-.descripcion{
-    font-size: 16px;
-}
-
-
-.titulares{
-    font-size: 24px;
-}
-#lupa{
-    background-color: var(--GrisClaro);
-    font-size: 24px;
-    border: solid 1px --GrisOscuro;
-}
-.barra{
-    background-color: var(--GrisClaro);
-    color: var(--GrisOscuro);
-    display: inline-block;
-    font-size: 24px;
-}
-.menuBurguer{
-    background-color: var(--Celeste);
-    font-size: 30px;
-    display: inline-block;
-    color: var(--GrisClaro);
-    border-radius: 5px;
-    padding: 15px;
-    box-sizing: border-box;
-
+.descripcion {
+  font-size: 16px;
 }
 
-.menu{
-    text-align: center;
+.titulares {
+  font-size: 24px;
+}
+#lupa {
+  background-color: var(--GrisClaro);
+  font-size: 24px;
+  border: solid 1px --GrisOscuro;
+}
+.barra {
+  background-color: var(--GrisClaro);
+  color: var(--GrisOscuro);
+  display: inline-block;
+  font-size: 24px;
+}
+.menuBurguer {
+  background-color: var(--Celeste);
+  font-size: 20px;
+  display: inline-block;
+  color: var(--GrisClaro);
+  border-radius: 5px;
+  padding: 15px;
+  box-sizing: border-box;
 }
 
-footer{
-    background-color: var(--GrisClaro);
-    text-align: center;
-    margin:0%;
-    color: var(--GrisOscuro);
-
+.menu {
+  text-align: center;
 }
-.icono{
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: var(--Azul);
+
+footer {
+  background-color: var(--GrisClaro);
+  text-align: center;
+  margin: 0%;
+  color: var(--GrisOscuro);
+}
+.icono {
+  font-size: 35px;
+  margin-bottom: 10px;
+  color: var(--Azul);
 }
 
 main {
-    width: 90%;
-    text-align: center;
+  width: 90%;
+  text-align: center;
 }
 
-.ultima-visita article, .oferta article{
-    margin-top: 10px;
-    padding: 15px;
-    background-color: var(--GrisClaro);
+.ultima-visita article,
+.oferta article {
+  margin-top: 10px;
+  padding: 15px;
+  background-color: var(--GrisClaro);
 }
-/* article img{
-    width: 10%;
-    margin: auto;
-} */
-.tarjetas{
-    background-color: white;
-    
+article img {
+  width: 100px;
+  margin: 0;
+  
+}
+.tarjetas {
+  background-color: white;
 }
 article {
-    display: flex;
+  display: flex;
+  
 }
