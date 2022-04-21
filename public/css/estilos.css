@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
 }
 :root {
   --Amarillo: #eac926;
@@ -10,100 +12,145 @@
   --Verde: #39b54a;
 }
 
-body {
-  background-color: var(--GrisClaro);
-  font-family: "Roboto";
-  margin: 0px;
+/* header y nav */
+
+
+.main-header {
+    background-color: var(--Amarillo);
+    padding: 4px;
 }
-header {
-  background-color: var(--Amarillo);
+.logo{
+    width: 200px;
+}
+.copy{
+    font-weight: 400;
+    text-align: center;
+    color: black;
+}
+.menuBurguer{
+    background-color: var(--Azul);
+    color: var(--GrisClaro);
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+    margin-bottom: 10px;
 }
 
-.nav {
-  display: inline-block;
+.navdown{
+    display: none;
+    
 }
 
-.logo {
-  width: 200px;
+.navdown li{
+    color: black;
 }
 
-.banner {
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
+.navdown ul{
+list-style: none;
+margin: 0;
+padding: 0;
 }
-.precio {
-  font-size: 18px;
-  border-top: solid 1px #ebebeb;
+
+.navdown a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
 }
-.descuentos {
-  font-size: 16px;
-  color: var(--Verde);
+.banner img{
+    width: 100%;
+   
 }
-.descripcion {
-  font-size: 16px;
+
+
+/* Tarjeta de productos */
+
+main{
+    width: 90vw;
+    background-color: var(--GrisClaro);
+    text-align: center;
+    margin: auto;
+}
+.cards{
+    display: flex;
+}
+
+article{
+     margin-top: 11px;
+    
+}
+h2 {
+    display: inline;
+    margin: auto;
+    color: var(--GrisOscuro);
+}
+.tarjetas img{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.tarjetas{
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin: auto;
+    box-sizing: border-box;
+   
+    
+}
+.articulos {
+    border-top: var(--GrisOscuro) 1px solid ;
+    margin: 60px;
+    box-sizing: border-box;
 }
 
 .titulares {
-  font-size: 24px;
+    width: 24px;
 }
-#lupa {
-  background-color: var(--GrisClaro);
-  font-size: 24px;
-  border: solid 1px --GrisOscuro;
+.precio {
+    width: 18px;
 }
-.barra {
-  background-color: var(--GrisClaro);
-  color: var(--GrisOscuro);
-  display: inline-block;
-  font-size: 24px;
+.descuentos {
+    width: 16px;
 }
-.menuBurguer {
-  background-color: var(--Celeste);
-  font-size: 20px;
-  display: inline-block;
-  color: var(--GrisClaro);
-  border-radius: 5px;
-  padding: 15px;
-  box-sizing: border-box;
+.descripcion {
+    width: 16px;
 }
 
-.menu {
-  text-align: center;
+
+/* Pie de Pagina (footer) */
+
+
+footer{
+    text-align: center;
+}
+.icono{
+    width: 2em;
+    margin: auto;
 }
 
-footer {
-  background-color: var(--GrisClaro);
-  text-align: center;
-  margin: 0%;
-  color: var(--GrisOscuro);
+
+@media (max-width: 361px){
+    .descripcion{
+        display: none;
+    }
 }
-.icono {
-  font-size: 35px;
-  margin-bottom: 10px;
-  color: var(--Azul);
+@media (min-width: 361px){
+    .tarjetas{
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+    .navdown{
+        display: block;
+    }
+    .menuBurguer{
+        display: none;
+    }
 }
 
-main {
-  width: 90%;
-  text-align: center;
-}
+@media (min-width: 769px){
 
-.ultima-visita article,
-.oferta article {
-  margin-top: 10px;
-  padding: 15px;
-  background-color: var(--GrisClaro);
-}
-article img {
-  width: 100px;
-  margin: 0;
-  
-}
-.tarjetas {
-  background-color: white;
-}
-article {
-  display: flex;
-  
 }
