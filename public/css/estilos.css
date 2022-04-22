@@ -18,10 +18,13 @@
 .main-header {
     background-color: var(--Amarillo);
     padding: 4px;
+    box-sizing: border-box;
+    
 }
 .logo{
     width: 200px;
 }
+
 .copy{
     font-weight: 400;
     text-align: center;
@@ -61,8 +64,13 @@ padding: 0;
     padding: 5px 0;
     font-size: 17px;
 }
+
+.banner{
+    margin-bottom: 0px;
+}
 .banner img{
     width: 100%;
+    
    
 }
 
@@ -70,55 +78,83 @@ padding: 0;
 /* Tarjeta de productos */
 
 main{
-    width: 90vw;
-    background-color: var(--GrisClaro);
     text-align: center;
     margin: auto;
 }
-.cards{
-    display: flex;
-}
-
 article{
+    padding: 5px;
      margin-top: 11px;
+     background-color: white;
+
     
+}
+section{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
 }
 h2 {
     display: inline;
     margin: auto;
     color: var(--GrisOscuro);
 }
-.tarjetas img{
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.tarjetas{
-    width: 300px;
-    padding: 5px;
-    margin-bottom: 10px;
-    margin: auto;
-    box-sizing: border-box;
-   
-    
+body{
+    background-color: var(--GrisClaro)
 }
 .articulos {
     border-top: var(--GrisOscuro) 1px solid ;
-    margin: 60px;
-    box-sizing: border-box;
+    /* margin: 60px; */
+    /* box-sizing: border-box; */
+    padding: 15px;
+    text-align: left;
+    position: relative;
 }
 
 .titulares {
-    width: 24px;
+    font-size:  24px;
+    display: block;
+    text-align: left;
+    margin-left: 50px;
+    
 }
+
+.fa-truck {
+    color: #39b54a;
+    display: block ;
+    font-size: 16px ;
+    padding: 5px ;
+    width: 30px ;
+    height: 30px ;
+    border: 1px solid #39b54a ;
+    background-color: #FFF ;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
 .precio {
-    width: 18px;
+   font-size: 18px;
+   font-weight: bold;
+   flex-grow: 0.3;
+}
+
+.precioDto{
+    display: flex;
+    justify-content: flex-start;
 }
 .descuentos {
-    width: 16px;
+    flex-grow: 0.7;
+    font-size: 16px;
+    color: #39b54a;
+    font-weight: bold;
 }
 .descripcion {
-    width: 16px;
+    font-size:  16px;
+}
+
+.imagenProducto{
+    width: 90%;
 }
 
 
@@ -133,14 +169,25 @@ footer{
     margin: auto;
 }
 
+@media (min-width: 361px){
 
-@media (max-width: 361px){
-    .descripcion{
+    article{
+        width: 40%;
+        margin: auto;
+    }
+    .navdown{
         display: none;
     }
+    .menuBurguer{
+        display: block;
+    }
+    .logo{
+        width: 50%;
+    }
 }
-@media (min-width: 361px){
-    .tarjetas{
+
+@media (min-width: 769px){
+    article {
         box-shadow: 0px 0px 10px rgb(100,100,100);
     }
     .navdown{
@@ -149,8 +196,17 @@ footer{
     .menuBurguer{
         display: none;
     }
+    article{
+        width: 40%;
+        margin-bottom: 10px;
+    }
 }
 
-@media (min-width: 769px){
+@media (min-width: 1024px){
+
+    article{
+        width: 20%;
+        
+    }
 
 }
