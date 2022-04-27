@@ -19,9 +19,9 @@
     background-color: var(--Amarillo);
     padding: 4px;
     box-sizing: border-box;
-    
+
 }
-.logo{
+.logo img{
     width: 200px;
 }
 
@@ -45,17 +45,20 @@
 
 .navdown{
     display: none;
-    
+
 }
 
 .navdown li{
     color: black;
+
 }
 
 .navdown ul{
 list-style: none;
 margin: 0;
 padding: 0;
+
+
 }
 
 .navdown a{
@@ -70,8 +73,8 @@ padding: 0;
 }
 .banner img{
     width: 100%;
-    
-   
+
+
 }
 
 
@@ -82,11 +85,11 @@ main{
     margin: auto;
 }
 article{
-    padding: 5px;
+
      margin-top: 11px;
      background-color: white;
 
-    
+
 }
 section{
     display: flex;
@@ -115,7 +118,7 @@ body{
     display: block;
     text-align: left;
     margin-left: 50px;
-    
+
 }
 
 .fa-truck {
@@ -174,6 +177,7 @@ footer{
     article{
         width: 40%;
         margin: auto;
+        margin-bottom: 10px;
     }
     .navdown{
         display: none;
@@ -183,6 +187,14 @@ footer{
     }
     .logo{
         width: 50%;
+        
+
+    }
+    .barraBusqueda{
+        display: none;
+    }
+    .navUp{
+        text-align: center;
     }
 }
 
@@ -200,13 +212,51 @@ footer{
         width: 40%;
         margin-bottom: 10px;
     }
+    .navUp{
+        display: flex;
+        justify-content: space-between;
+    }
+    .copy{
+        max-width: 300px;
+        text-align: right;
+    }
+    .navdown{
+        display: flex;
+        justify-content: space-between
+
+    }
+    .navdown ul{
+        display: flex;
+    }
+    .navdown li{
+        margin: 0 5px
+    }
 }
 
 @media (min-width: 1024px){
 
     article{
         width: 20%;
-        
+
     }
+    .navUp,.navdown {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .navdown li{
+        margin: 0 10px
+    }
+    .navdown a{
+        font-size: 19px;
+    }
+    .copy{
+        max-width: none;
+        margin-right: 10px;
+        font-size: 18px;
+    }
+
+
+
+
 
 }
